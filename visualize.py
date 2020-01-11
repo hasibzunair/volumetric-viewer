@@ -27,9 +27,10 @@ def normalize(image):
 
 
 # Read the volumetric data
+# Volume is in Depth, Width, Height format
 img_3d = np.load("3D_vol.npy")
 
-# Transpose 
+# Transpose to Width, Height, Depth format
 img_3d = np.transpose(img_3d)
 
 # Normalize
@@ -56,20 +57,16 @@ while True:
 
     if k != 255:
 
-        #print(k) 
-
         if k == 119:
+
             #print("forward")
             counter+=1
-
-            # save images
-            #cv2.imwrite("{}.jpg".format(counter), window )
             print("Slice number: ", counter)
             
         if k == 115:
+
             #print("backward")
             counter-=1
-
             print("Slice number: ",counter)
 
     if k == 27: 
