@@ -12,7 +12,7 @@ Tested on Ubuntu 18.04 with Python 3.6.
 # Usage
 Just clone and run ```visualize.py```
 
-Demo uses a 3D CT Image data with depth of 20. Had to sample subset of slices as the entire volume crosses 100MB space which Github does not allow uploading! :( 
+Demo uses a 3D CT Image data with depth of 20. Use 'W' and 'S' to toggle between slices. Had to sample subset of slices as the entire volume crosses 100MB space which Github does not allow uploading! :( 
 
 <p align="center">
   <a href="#"><img src="asset/demo.png"></a>
